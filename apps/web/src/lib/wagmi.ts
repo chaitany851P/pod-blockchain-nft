@@ -2,7 +2,8 @@ import { http, createConfig, cookieStorage, createStorage } from 'wagmi';
 import { getDefaultConfig } from '@rainbow-me/rainbowkit';
 import { chains } from './chains';
 
-const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || '';
+// Get a free project ID at https://cloud.walletconnect.com
+const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || 'demo_project_id';
 
 
 export const wagmiConfig = getDefaultConfig({
